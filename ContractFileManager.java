@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContractFileManager {
-    private String filePath;
+    private String filePath; // INSERT FILE HERE FOR WHOEVER PUTS THIS TOGETHER! It will make the one error I have go away.
 
     public ContractFileManager(String filePath) {
         this.filePath = filePath;

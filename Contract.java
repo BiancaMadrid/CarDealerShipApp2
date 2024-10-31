@@ -12,8 +12,13 @@ public class Contract {
         this.vehicleId = vehicleId;
     }
 
-    public abstract double getTotalPrice();
-    public abstract double getMonthlyPayment();
+    public double getTotalPrice() {
+        return 0;
+    }
+
+    public double getMonthlyPayment() {
+        return 0;
+    }
 
     @Override
     public String toString() {
