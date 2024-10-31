@@ -13,5 +13,14 @@ public class SalesContract extends Contract {
     public SalesContract(){
 
 
+    //Constructor
+    public SalesContract(double salesTaxAmount, double recordingFee, double processingFee,
+                         boolean financeCar){
+        //call Abstract class???
+        //use if statement for processing fee bc it varies depending on vehicle price
+        this.salesTaxAmount = salesTaxAmount;
+        this.recordingFee = recordingFee;
+        this.processingFee = processingFee;
+        this.financeCar = financeCar;
     }
 }
