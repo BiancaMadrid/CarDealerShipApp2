@@ -22,5 +22,39 @@ public class SalesContract extends Contract {
         this.recordingFee = recordingFee;
         this.processingFee = processingFee;
         this.financeCar = financeCar;
+    //Getters
+    public double getSalesTaxAmount() {
+        return salesTaxAmount;
     }
+
+    public double getRecordingFee() {
+        return recordingFee;
+    }
+
+    public double getProcessingFee() {
+        return processingFee;
+    }
+
+    public boolean isFinanceCar() {
+        return financeCar;
+    }
+
+    //Setters
+    public void setSalesTaxAmount(double salesTaxAmount) {
+        this.salesTaxAmount = salesTaxAmount;
+    }
+
+    public void setRecordingFee(double recordingFee) {
+        this.recordingFee = recordingFee;
+    }
+
+    public void setProcessingFee(double processingFee) {
+        this.processingFee = processingFee;
+    }
+
+    public void setFinanceCar(boolean financeCar) {
+        this.financeCar = financeCar;
+    }
+
+
 }
