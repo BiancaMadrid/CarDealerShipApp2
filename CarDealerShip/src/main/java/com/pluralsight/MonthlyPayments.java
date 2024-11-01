@@ -12,9 +12,11 @@ public class MonthlyPayments {
     static double yearlyInterestRate;
     static int loanTermYears;
 
+    //ADD CONSTRUCTOR, SETTERS AND GETTERS, add override AND MAKE THE ATTRIBUTES PRIVATE BC THE WORKSHOP ASKED FOR OVERRIDE :(
 
     //Method to Display Finance Screen
    public static void DisplayFinanceScreen(){
+   public static void displayFinanceScreen(){
        System.out.println("You have Selected Finance Option:\n ");
 
        System.out.println("Enter Loan Principle:\n ");
@@ -49,6 +51,7 @@ public class MonthlyPayments {
         return (loanPrincipleBorrowed * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfMonthlyPayments))
                 / (Math.pow(1 + monthlyInterestRate, numberOfMonthlyPayments) - 1);
    }
+
 
 
     }
