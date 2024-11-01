@@ -1,4 +1,3 @@
-
 package com.pluralsight;
 
 import java.io.FileWriter;
@@ -11,7 +10,7 @@ public class ContractDataManager {
     private List<Contract> contracts = new ArrayList<>();
     private String filePath; //added filepath needs to go here!
 
-    public ContractDataManager() {
+    public ContractDataManager(String filePath) {
         this.filePath = filePath;
     }
 

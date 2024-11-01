@@ -5,53 +5,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContractFileManager {
-    private String filePath;
+    private String filePath; // INSERT FILE HERE FOR WHOEVER PUTS THIS TOGETHER! It will make the one error I have go away.
 
-    public ContractFileManager() {
+    public ContractFileManager(String filePath) {
         this.filePath = filePath;
     }
 
     public void saveContract(Contract contract) {
-        // Append ObjectOutputStream handling
-        try (FileOutputStream fos = new FileOutputStream(filePath, true);
-             AppendingObjectOutputStream oos = new AppendingObjectOutputStream(fos)) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filePath, true))) {
             oos.writeObject(contract);
         } catch (IOException e) {
-            System.err.println("Error saving contract: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 
     public List<Contract> loadContracts() {
         List<Contract> contracts = new ArrayList<>();
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))) {
+        try (ObjectInputStream ois = new ObjectInputStream()) {
             while (true) {
-                try {
-                    Contract contract = (Contract) ois.readObject();
-                    contracts.add(contract);
-                } catch (EOFException e) {
-                    break; // End of file reached
-                }
+                Contract contract = (Contract) ois.readObject();
+                contracts.add(contract);
             }
-        } catch (FileNotFoundException e) {
-            System.err.println("File not found: " + e.getMessage());
-        } catch (IOException e) {
-            System.err.println("IO error: " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-            System.err.println("Class not found: " + e.getMessage());
+        } catch (EOFException e) {
+            //End of File Reached Exception here
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
         return contracts;
-    }
-}
-
-// Custom ObjectOutputStream to handle appending objects
-class AppendingObjectOutputStream extends ObjectOutputStream {
-    public AppendingObjectOutputStream(OutputStream out) throws IOException {
-        super(out);
-    }
-
-    @Override
-    protected void writeStreamHeader() throws IOException {
-        // Override to prevent writing a header when appending objects
-        reset();
     }
 }
