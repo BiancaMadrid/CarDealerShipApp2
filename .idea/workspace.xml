@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c39585b0-0e1c-41d4-957c-b7dd701dace6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CarDealerShip/src/main/java/com/pluralsight/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarDealerShip/src/main/java/com/pluralsight/ContractFileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarDealerShip/src/main/java/com/pluralsight/LeaseContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CarDealerShip/src/main/java/com/pluralsight/SalesContract.java" afterDir="false" />
-    </list>
+    <list default="true" id="c39585b0-0e1c-41d4-957c-b7dd701dace6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,14 +20,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "XavierGlenn"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/BiancaMadrid/CarDealerShipApp2.git",
+    "accountId": "0e993501-3073-4d0b-a8a4-a980f311032b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2oGXn04gLrKxSSnr37gtAM3jOvZ" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Xavier",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c39585b0-0e1c-41d4-957c-b7dd701dace6" name="Changes" comment="" />
+      <created>1730497050799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730497050799</updated>
+    </task>
     <servers />
   </component>
 </project>
