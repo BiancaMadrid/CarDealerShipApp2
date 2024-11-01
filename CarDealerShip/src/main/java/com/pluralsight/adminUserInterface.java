@@ -2,12 +2,12 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
-public class AdminUserInterface {
+public class adminUserInterface {
     private ContractDataManager contractDataManager;
     private ContractFileManager contractFileManager;
     private Scanner scanner = new Scanner(System.in);
 
-    public AdminUserInterface(ContractDataManager contractDataManager, ContractFileManager contractFileManager) {
+    public adminUserInterface(ContractDataManager contractDataManager, ContractFileManager contractFileManager) {
         this.contractDataManager = contractDataManager;
         this.contractFileManager = contractFileManager; }
 
