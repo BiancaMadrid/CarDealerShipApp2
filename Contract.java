@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Contract {
     //abstract static class Contract{
-
+//Hi
 
         LocalDate date = LocalDate.parse(LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
         protected String customerName;
