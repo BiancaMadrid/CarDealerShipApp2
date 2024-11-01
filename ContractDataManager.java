@@ -27,20 +27,20 @@ public class ContractDataManager {
             if (contract instanceof SalesContract) {
                 SalesContract salesContract = (SalesContract) contract;
                 writer.println("Sales Contract");
-                writer.println("Buyer: " + salesContract.buyerName);
-                writer.println("Vehicle ID: " + salesContract.vehicleId);
+                writer.println("Buyer: " + salesContract.getBuyerName());
+                writer.println("Vehicle ID: " + salesContract.getVehicleId());
                 writer.println("Price: " + salesContract.getTotalPrice());
-                writer.println("Down Payment: " + salesContract.downPayment());
-                writer.println("Sales Tax: " + salesContract.salesTax());
+                writer.println("Down Payment: " + salesContract.getDownPayment());
+                writer.println("Sales Tax: " + salesContract.getSalesTax());
                 writer.println("Monthly Payment: " + salesContract.getMonthlyPayment());
             } else if (contract instanceof LeaseContract) {
                 LeaseContract leaseContract = (LeaseContract) contract;
                 writer.println("Sales Contract");
-                writer.println("Buyer: " + leaseContract.buyerName);
-                writer.println("Vehicle ID: " + leaseContract.vehicleId);
-                writer.println("Price: " + leaseContract.monthlyFee());
-                writer.println("Down Payment: " + leaseContract.leaseTerm());
-                writer.println("Sales Tax: " + leaseContract.residualValue());
+                writer.println("Buyer: " + leaseContract.getBuyerName());
+                writer.println("Vehicle ID: " + leaseContract.getVehicleId());
+                writer.println("Price: " + leaseContract.getMonthlyFee());
+                writer.println("Down Payment: " + leaseContract.getLeaseTerm());
+                writer.println("Sales Tax: " + leaseContract.getResidualValue());
                 writer.println("Monthly Payment: " + leaseContract.getMonthlyPayment());
             }
             writer.println("-----"); //Needs this so it separates the contracts I guess?

@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class LeaseContract extends Contract{
+public class LeaseContract extends Contract {
     private double monthlyFee;
     private double leaseTerm;
     private double residualValue;
@@ -12,15 +12,38 @@ public class LeaseContract extends Contract{
         this.residualValue = residualValue;
     }
 
+    public String getBuyerName() {
+        return super.getBuyerName();
+    }
+
+    public String getVehicleId() {
+        return super.getVehicleId();
+    }
+
+    public double getMonthlyFee() {
+        return this.monthlyFee;
+    }
+
+    public double getLeaseTerm() {
+        return this.leaseTerm;
+    }
+
+    public double getResidualValue() {
+        return this.residualValue;
+    }
+
     @Override
     public double getTotalPrice() {
-        return (monthlyFee * leaseTerm) + residualValue; }
+        return (monthlyFee * leaseTerm) + residualValue;
+    }
 
     @Override
     public double getMonthlyPayment() {
-        return monthlyFee; }
-
-        @Override
-        public String toString() {
-            return super.toString() + ", Tyoe: Lease, Monthly Payment: " + getMonthlyPayment(); }
+        return monthlyFee;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Tyoe: Lease, Monthly Payment: " + getMonthlyPayment();
+    }
+}

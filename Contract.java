@@ -12,6 +12,14 @@ public class Contract {
         this.vehicleId = vehicleId;
     }
 
+    public String getBuyerName() {
+        return buyerName;
+    }
+
+    public String getVehicleId() {
+        return this.vehicleId;
+    }
+
     public double getTotalPrice() {
         return 0;
     }
@@ -23,5 +31,9 @@ public class Contract {
     @Override
     public String toString() {
         return "Buyer: " + buyerName + ", Email: " + buyerEmail + ", Vehicle ID: " + vehicleId;
+    }
+
+    public void setBuyerName(String buyerName) {
+        this.buyerName = buyerName;
     }
 }

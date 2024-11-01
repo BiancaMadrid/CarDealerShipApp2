@@ -12,6 +12,22 @@ package com.pluralsight;
             this.salesTax = salesTax;
         }
 
+        public String getBuyerName() {
+            return super.getBuyerName();
+        }
+
+        public String getVehicleId() {
+            return super.getVehicleId();
+        }
+
+        public double getDownPayment() {
+            return this.downPayment;
+        }
+
+        public double getSalesTax() {
+            return this.salesTax;
+        }
+
         @Override
         public double getTotalPrice() {
             return price + (price * salesTax) - downPayment;
