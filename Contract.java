@@ -6,7 +6,7 @@ public class Contract {
     protected String buyerEmail;
     protected String vehicleId;
 
-    public Contract(String buyerName, String buyerEmail, String vehicleId) {
+    public Contract(String buyerName, String buyerEmail, String vehicleId, double price, double downPayment, double salesTax) {
         this.buyerName = buyerName;
         this.buyerEmail = buyerEmail;
         this.vehicleId = vehicleId;

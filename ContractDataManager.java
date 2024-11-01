@@ -1,3 +1,4 @@
+
 package com.pluralsight;
 
 import java.io.FileWriter;
@@ -10,7 +11,7 @@ public class ContractDataManager {
     private List<Contract> contracts = new ArrayList<>();
     private String filePath; //added filepath needs to go here!
 
-    public ContractDataManager(String filePath) {
+    public ContractDataManager() {
         this.filePath = filePath;
     }
 
@@ -33,6 +34,7 @@ public class ContractDataManager {
                 writer.println("Down Payment: " + salesContract.getDownPayment());
                 writer.println("Sales Tax: " + salesContract.getSalesTax());
                 writer.println("Monthly Payment: " + salesContract.getMonthlyPayment());
+
             } else if (contract instanceof LeaseContract) {
                 LeaseContract leaseContract = (LeaseContract) contract;
                 writer.println("Sales Contract");

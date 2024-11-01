@@ -1,3 +1,4 @@
+
 package com.pluralsight;
 
 public class LeaseContract extends Contract {
@@ -6,7 +7,7 @@ public class LeaseContract extends Contract {
     private double residualValue;
 
     public LeaseContract(String buyerName, String buyerEmail, String vehicleId, double monthlyFee, double leaseTerm, double residualValue) {
-        super(buyerName, buyerEmail, vehicleId);
+        super(buyerName, buyerEmail, vehicleId, monthlyFee, leaseTerm, residualValue);
         this.monthlyFee = monthlyFee;
         this.leaseTerm = leaseTerm;
         this.residualValue = residualValue;
